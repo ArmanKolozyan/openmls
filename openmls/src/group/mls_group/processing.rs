@@ -405,7 +405,7 @@ impl MlsGroup {
     ///  - ValSem204: Public keys from Path must be verified and match the
     ///    private keys from the direct path
     ///  - ValSem205
-    pub(crate) fn process_unverified_message<Provider: OpenMlsProvider>(
+    pub fn process_unverified_message<Provider: OpenMlsProvider>(
         &self,
         provider: &Provider,
         unverified_message: UnverifiedMessage,
